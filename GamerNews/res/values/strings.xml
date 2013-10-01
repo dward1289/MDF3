@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Gamer News</string>
+    <string name="action_settings">Settings</string>
+    <string name="goTxt">Activate Search</string>
+    <string name="hintTxt">Select a site:</string>
+    <string name="hintTxt2">Enter the name of a game:</string>
+    <string name="hintTxt3">example: Grand Theft Auto V</string>
+    <string-array name="news_search">
+        <item>GameSpot</item>
+        <item>IGN</item>
+    </string-array>
+
+</resources>
