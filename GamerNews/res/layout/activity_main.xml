@@ -36,6 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/goTxt" 
-        android:onClick="activateSearch" />
+        android:onClick="activateSearch" 
+        android:background="#999999"/>
 
 </LinearLayout>

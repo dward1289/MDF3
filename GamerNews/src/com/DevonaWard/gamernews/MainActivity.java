@@ -1,3 +1,13 @@
+/*
+ * Project	GamerNews (Project-1)
+ * 
+ * Package	com.DevonaWard.gamernews
+ * 
+ * @author Devona Ward
+ * 
+ * Date: Oct 2, 2013
+ */
+
 package com.DevonaWard.gamernews;
 
 import java.util.List;
