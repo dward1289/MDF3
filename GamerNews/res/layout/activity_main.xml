@@ -2,23 +2,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent" 
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#CCCCCC">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="@string/hintTxt" />
+        android:text="@string/hintTxt" 
+        android:textSize="20sp"
+        android:textColor="#000099"/>
 
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/news_search" />
+        android:entries="@array/news_search"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hintTxt2" />
+        android:text="@string/hintTxt2" 
+        android:textSize="20sp"
+        android:textColor="#000099"/>
 
     <EditText
         android:id="@+id/userEntry"
