@@ -11,13 +11,18 @@
         android:text="@string/hintTxt" 
         android:textSize="20sp"
         android:textColor="#000099"/>
-
+    
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:entries="@array/news_search"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
+    
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -31,12 +36,16 @@
         android:layout_height="wrap_content"
         android:hint="@string/hintTxt3" />
     
-    <Button
-        android:id="@+id/goBtn"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text=""/>
+    
+    <Button
+        android:id="@+id/goBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="@string/goTxt" 
-        android:onClick="activateSearch" 
-        android:background="#999999"/>
+        android:onClick="activateSearch"/>
 
 </LinearLayout>
