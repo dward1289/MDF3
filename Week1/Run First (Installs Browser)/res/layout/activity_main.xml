@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000" >
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/theTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/theHint"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"/>
+    
+    </LinearLayout>
+    
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <ImageButton 
+        android:id="@+id/theBack"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:src="@drawable/back"
+    	android:contentDescription="@+string/back"
+    	android:background="#000000"
+    	android:onClick="backButton"/>
+
+    <ImageButton
+        android:id="@+id/theGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@+string/go"
+        android:src="@drawable/go" 
+        android:background="#000000"
+        android:onClick="goButton"/>
+
+    <ImageButton
+        android:id="@+id/theRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@+string/refresh"
+        android:src="@drawable/refresh" 
+        android:background="#000000"
+        android:onClick="refreshButton"/>
+
+    <ImageButton
+        android:id="@+id/theForward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="39dp"
+        android:layout_toLeftOf="@+id/theRefresh"
+        android:background="#000000"
+        android:contentDescription="@+string/forward"
+        android:src="@drawable/forward" 
+        android:onClick="forwardButton"/>
+
+    <ImageButton
+        android:id="@+id/theStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="33dp"
+        android:layout_toRightOf="@+id/theRefresh"
+        android:background="#000000"
+        android:contentDescription="@+string/stop"
+        android:src="@drawable/stop" 
+        android:onClick="stopButton"/>
+
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/theBrowser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MG Browser Access</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_web_browser">MG Browser Access</string>
+    <string name="picName">KingJames</string>
+    <string name="btnName">Access Favorite Site</string>
+
+</resources>
