@@ -17,15 +17,37 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="148dp"/>
 
-    <ImageButton
-        android:id="@+id/capturePic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/locationTxt"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="54dp"
-        android:layout_marginTop="24dp"
-        android:contentDescription="@string/camera"
-        android:src="@drawable/thecamera" />
+        <ImageButton
+            android:id="@+id/capturePic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/locationTxt"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="40dp"
+            android:contentDescription="@string/camera"
+            android:onClick="capturePicture"
+            android:src="@drawable/thecamera" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/capturePic"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/camera"
+            android:src="@drawable/thecamera" />
+
+        <TextView
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/capturePic"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="38dp"
+            android:ems="10" />
+
 
 </RelativeLayout>
