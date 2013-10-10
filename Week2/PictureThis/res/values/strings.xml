@@ -4,6 +4,10 @@
     <string name="app_name">PictureThis</string>
     <string name="action_settings">Settings</string>
     <string name="camera">Camera</string>
+    <string name="picName">Name your photo.</string>
+    <string name="saveBtn">Save Photo</string>
+    <string name="camTxt">Tap the camera to take a photo.</string>
+    
     
 
 </resources>
