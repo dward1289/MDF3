@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical" 
+    android:background="#6699FF">
 
     <ImageView
         android:id="@+id/imageView"
@@ -35,13 +36,15 @@
         android:id="@+id/picName"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/picName" />
+        android:hint="@string/picName" 
+        android:textColorHint="#A7C0CC"
+        android:textColor="#FFFFFF"/>
 
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/saveBtn"
-        android:onClick="saveButton" />
+        android:onClick="saveButton"/>
 
 </LinearLayout>

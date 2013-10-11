@@ -76,11 +76,12 @@ public class MainActivity extends Activity {
 		
 		//Vibration pattern found at: http://stackoverflow.com/questions/12114917/notification-setfullscreenactivity
 		long[] vibration = { 0, 500, 250, 500 };
+		
 		// build notification
 		Notification notification  = new Notification.Builder(this)
 		
 		        .setContentTitle("PictureThis")
-		        .setContentText("Your photo has "+pictureName+" been saved.")
+		        .setContentText("Your photo "+pictureName+" has been saved.")
 		        .setSmallIcon(R.drawable.ic_launcher)
 		        .setContentIntent(pendingIntent)
 		        .setSound(theSound)
