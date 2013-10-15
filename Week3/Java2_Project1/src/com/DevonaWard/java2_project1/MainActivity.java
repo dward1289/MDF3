@@ -14,6 +14,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -100,12 +101,26 @@ public class MainActivity extends Activity implements MainFragment.mainListener{
 	}
 
 
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+	    // Handle presses on the action bar items
+	    switch (item.getItemId()) {
+	        case R.id.moreNBA:
+	            onNewAct();
+	            return true;
+	        case R.id.myGit:
+	            onAboutStart();
+	            return true;
+	        default:
+	            return super.onOptionsItemSelected(item);
+	    }
+	}
 	@Override
 	public void onNewAct() {
 		//Explicit Intent created
-		Intent intent = new Intent(this,SecondActivity.class);
-		intent.putExtra("teamName", teamID);	
-		startActivity(intent);
+		Intent intentNBA = new Intent(Intent.ACTION_VIEW,Uri.parse("http://search.espn.go.com/nba"));
+		startActivity(intentNBA);
 	}
 
 

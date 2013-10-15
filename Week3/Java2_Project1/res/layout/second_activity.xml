@@ -3,11 +3,81 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
+
+    <TextView
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/placeHolder" />
     
-    <WebView
-    android:id="@+id/webview"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" >
-</WebView>
+     <TableLayout
+        android:id="@+id/playersLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:id="@+id/kobeRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+        		android:contentDescription="@+string/kobe"
+        		android:layout_width="95dp"
+        		android:layout_height="95dp"
+        		android:layout_marginTop="14dp"
+        		android:layout_marginLeft="-80dp"
+        		android:src="@drawable/kobe" />
+
+            <TextView
+                android:id="@+id/kobeTxt"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="@+string/hey" />
+
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/roseRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+        		android:contentDescription="@+string/derrick"
+        		android:layout_width="95dp"
+        		android:layout_height="95dp"
+        		android:layout_marginTop="14dp"
+        		android:layout_marginLeft="-80dp"
+        		android:src="@drawable/derrickrose" />
+
+            <TextView
+                android:id="@+id/derrickTxt"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/placeHolder" />
+        </TableRow>
+
+    <TableRow
+            android:id="@+id/lebronRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+        		android:contentDescription="@+string/lebron"
+        		android:layout_width="95dp"
+        		android:layout_height="95dp"
+        		android:layout_marginTop="14dp"
+        		android:layout_marginLeft="-60dp"
+        		android:src="@drawable/lebronjames" />
+
+            <TextView
+                android:id="@+id/lebronTxt"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/placeHolder" />
+        </TableRow>
+</TableLayout>
+    
 
     </LinearLayout>
