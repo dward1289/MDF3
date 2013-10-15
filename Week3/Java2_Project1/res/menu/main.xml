@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/moreNBA"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/nba"
+        android:title="@string/action_settings"/>
+    <item
+        android:id="@+id/MVP"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/network"
+        android:title="@string/action_settings"/>
+    <item
+        android:id="@+id/myGit"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/github"
+        android:title="@string/action_settings"/>
+    <item
+        android:id="@+id/aboutMe"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/network"
+        android:title="@string/action_settings"/>
+
+   
+   
+
+</menu>
