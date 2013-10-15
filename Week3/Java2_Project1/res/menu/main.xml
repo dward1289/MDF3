@@ -22,7 +22,7 @@
         android:id="@+id/aboutMe"
         android:orderInCategory="100"
         android:showAsAction="ifRoom"
-        android:icon="@drawable/network"
+        android:icon="@drawable/idabout"
         android:title="@string/action_settings"/>
 
    
