@@ -5,25 +5,25 @@
         android:orderInCategory="100"
         android:showAsAction="ifRoom"
         android:icon="@drawable/nba"
-        android:title="@string/action_settings"/>
+        android:title="@string/more"/>
     <item
         android:id="@+id/MVP"
         android:orderInCategory="100"
         android:showAsAction="ifRoom"
         android:icon="@drawable/network"
-        android:title="@string/action_settings"/>
+        android:title="@string/mvp"/>
     <item
         android:id="@+id/myGit"
         android:orderInCategory="100"
         android:showAsAction="ifRoom"
         android:icon="@drawable/github"
-        android:title="@string/action_settings"/>
+        android:title="@string/about"/>
     <item
         android:id="@+id/aboutMe"
         android:orderInCategory="100"
         android:showAsAction="ifRoom"
         android:icon="@drawable/idabout"
-        android:title="@string/action_settings"/>
+        android:title="@string/AM"/>
 
    
    

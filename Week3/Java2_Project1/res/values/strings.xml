@@ -13,6 +13,8 @@
     <string name="placeHolder"></string>
     <string name="theinstruct">Select a NBA team:</string>
     <string name="go">Go</string>
+    <string name="mvp">MVP</string>
+    <string name="AM">About MadGeek</string>
     <string name="more">More NBA</string>
     <string-array name="city_array">
         <item>Atlanta Hawks</item>
