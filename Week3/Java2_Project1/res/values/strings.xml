@@ -16,6 +16,16 @@
     <string name="mvp">MVP</string>
     <string name="AM">About MadGeek</string>
     <string name="more">More NBA</string>
+    <string name="kname">Kobe Bryant</string>
+    <string name="kteam">L.A Lakers</string>
+    <string name="kmvp">MVP 2007 to 2008</string>
+    <string name="dname">Derrick Rose</string>
+    <string name="dteam">Chicago Bulls</string>
+    <string name="dmvp">MVP 2010 to 2011</string>
+    <string name="lname">Lebron James</string>
+    <string name="lteam">Miami Heat</string>
+    <string name="MVPteam">Most Valued Players 2007 to 2013</string>
+    <string name="lmvp">MVP 2008 to 2010 and 2011 to 2013</string>
     <string-array name="city_array">
         <item>Atlanta Hawks</item>
         <item>Boston Celtics</item>

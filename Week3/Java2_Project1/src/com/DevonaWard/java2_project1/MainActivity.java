@@ -1,3 +1,13 @@
+/*
+ * Project	Java2_Project1
+ * 
+ * Package	com.DevonaWard.java2_project1
+ * 
+ * @author Devona Ward
+ * 
+ * Date: Oct 15, 2013
+ */
+
 package com.DevonaWard.java2_project1;
 
 import org.json.JSONArray;
@@ -32,6 +42,7 @@ public class MainActivity extends Activity implements MainFragment.mainListener{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main_frag);
+		
 	}
 
 	
@@ -104,7 +115,7 @@ public class MainActivity extends Activity implements MainFragment.mainListener{
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-	    // Handle presses on the action bar items
+	    //Onclick action bar items
 	    switch (item.getItemId()) {
 	        case R.id.moreNBA:
 	            onNewAct();
@@ -112,6 +123,8 @@ public class MainActivity extends Activity implements MainFragment.mainListener{
 	        case R.id.myGit:
 	            onAboutStart();
 	            return true;
+	        case R.id.MVP:
+	        	onMVP();
 	        default:
 	            return super.onOptionsItemSelected(item);
 	    }
@@ -123,7 +136,11 @@ public class MainActivity extends Activity implements MainFragment.mainListener{
 		startActivity(intentNBA);
 	}
 
-
+	public void onMVP() {
+		//Explicit Intent created
+		Intent intentNBA = new Intent(this, SecondActivity.class);
+		startActivity(intentNBA);
+	}
 	@Override
 	public void onAboutStart() {
 		Intent aboutIntent = new Intent (Intent.ACTION_VIEW,Uri.parse("https://github.com/dward1289?tab=repositories"));

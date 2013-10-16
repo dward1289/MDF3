@@ -5,10 +5,10 @@
     android:orientation="vertical" >
 
     <TextView
-        android:gravity="center_vertical"
+        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/placeHolder" />
+        android:text="@string/MVPteam" />
     
      <TableLayout
         android:id="@+id/playersLayout"
@@ -27,14 +27,12 @@
         		android:layout_width="95dp"
         		android:layout_height="95dp"
         		android:layout_marginTop="14dp"
-        		android:layout_marginLeft="-80dp"
         		android:src="@drawable/kobe" />
 
             <TextView
                 android:id="@+id/kobeTxt"
                 android:layout_gravity="center_vertical"
-                android:gravity="center_vertical"
-                android:text="@+string/hey" />
+                android:gravity="center_vertical"/>
 
         </TableRow>
         
@@ -48,7 +46,6 @@
         		android:layout_width="95dp"
         		android:layout_height="95dp"
         		android:layout_marginTop="14dp"
-        		android:layout_marginLeft="-80dp"
         		android:src="@drawable/derrickrose" />
 
             <TextView
@@ -68,7 +65,6 @@
         		android:layout_width="95dp"
         		android:layout_height="95dp"
         		android:layout_marginTop="14dp"
-        		android:layout_marginLeft="-60dp"
         		android:src="@drawable/lebronjames" />
 
             <TextView
