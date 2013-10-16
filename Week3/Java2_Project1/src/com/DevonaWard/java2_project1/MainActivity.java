@@ -125,6 +125,10 @@ public class MainActivity extends Activity implements MainFragment.mainListener{
 	            return true;
 	        case R.id.MVP:
 	        	onMVP();
+	        	return true;
+	        case R.id.aMe:
+	        	onMG();
+	        	return true;
 	        default:
 	            return super.onOptionsItemSelected(item);
 	    }
@@ -136,13 +140,20 @@ public class MainActivity extends Activity implements MainFragment.mainListener{
 		startActivity(intentNBA);
 	}
 
-	public void onMVP() {
-		//Explicit Intent created
+	public void onMG() {		
+		Intent intentInfo = new Intent(this, developerInfo.class);
+		startActivity(intentInfo);
+	}
+	
+	public void onMVP() {		
 		Intent intentNBA = new Intent(this, SecondActivity.class);
 		startActivity(intentNBA);
 	}
+	
+	
 	@Override
 	public void onAboutStart() {
+		//Explicit Intent created
 		Intent aboutIntent = new Intent (Intent.ACTION_VIEW,Uri.parse("https://github.com/dward1289?tab=repositories"));
 		startActivity(aboutIntent);
 		
