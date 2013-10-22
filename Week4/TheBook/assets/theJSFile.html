@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <script type="text/javascript">
+    function getValues(){
+       //return value to Android 
+       var billName= document.billForm.billName.value;
+       var billAmount= document.billForm.amountPaid.value;
+       var billNote= document.billForm.noteIt.value;
+       MyAndroid.receiveJSValues(billName);
+       MyAndroid.receiveJSValues(billAmount);
+       MyAndroid.receiveJSValues(billNote);
+    }
+    </script>
+    <title></title>
+  </head>
+  <body >
+    <form name="billForm" id="billForm">
+      Name of Bill : <input type="text" name="billName"> <br/>
+      Amount Paid : $<input type="number" min="0" max="9999" step="0.01" size="6" name="amountPaid"><br/>
+	  Note : </br>
+	  <textarea rows="5" cols="20" name="noteIt" ></textarea> </br>
+      
+      <button type="button" onclick="getValues();">Save</button>
+    </form>
+  </body>
+</html>
