@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 import android.view.Menu;
 import android.webkit.JavascriptInterface;
@@ -15,6 +16,7 @@ public class MainActivity extends Activity {
 
 	Context mContext;
 	WebView webView;
+	String transferInfo;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -46,11 +48,20 @@ public class MainActivity extends Activity {
 	        mContext = c;
 	    }
 
-	   
+	   //Javascript function
 	    @JavascriptInterface
-	public void receiveJSValues(String str) {
+	public void receiveJSValues(String info) {
 		//Logs values from text views in HTML
-		  Log.i("Received Value from JS: " , str);
+		  Log.i("Received Value from JS: " , info);
+		  transferInfo = info;
+		  theLaunch();
+
 		}
+	}
+	
+	public void theLaunch(){
+		Intent billIntent = new Intent(this, MadGeekBrowser.class);
+		  billIntent.putExtra("theInfo",transferInfo);
+		  startActivity(billIntent);
 	}
 }

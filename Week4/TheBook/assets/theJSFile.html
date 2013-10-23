@@ -3,24 +3,33 @@
     <script type="text/javascript">
     function getValues(){
        //return value to Android 
-       var billName= document.billForm.billName.value;
-       var billAmount= document.billForm.amountPaid.value;
-       var billNote= document.billForm.noteIt.value;
-       MyAndroid.receiveJSValues(billName);
-       MyAndroid.receiveJSValues(billAmount);
-       MyAndroid.receiveJSValues(billNote);
+       var gameName= document.billForm.gameName.value;
+       var e = document.getElementById("mySelect");
+	   var strUser = e.options[e.selectedIndex].value;
+
+       var o = strUser +"" + gameName;
+       MyAndroid.receiveJSValues(o);
     }
+    
+	function changeBackground(color) {
+   document.body.style.background = color;
+}
+
+
     </script>
     <title></title>
   </head>
-  <body >
+  <body onload="changeBackground('#B2FFB2');">
     <form name="billForm" id="billForm">
-      Name of Bill : <input type="text" name="billName"> <br/>
-      Amount Paid : $<input type="number" min="0" max="9999" step="0.01" size="6" name="amountPaid"><br/>
-	  Note : </br>
-	  <textarea rows="5" cols="20" name="noteIt" ></textarea> </br>
+      <select id="mySelect">
+ 		<option value="http://www.gamespot.com/search/?qs=">GameSpot</option>
+  		<option value="http://www.ign.com/search?q=">IGN</option>
+	</select>
+      <p>Game Name: <input type="text" name="gameName"></p>
       
-      <button type="button" onclick="getValues();">Save</button>
+	  
+      
+      <button type="button" onclick="getValues();">Activate Search</button>
     </form>
   </body>
 </html>
