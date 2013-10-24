@@ -3,7 +3,7 @@
     <script type="text/javascript">
     function getValues(){
        //return value to Android 
-       var gameName= document.billForm.gameName.value;
+       var gameName= document.gameForm.gameName.value;
        var e = document.getElementById("mySelect");
 	   var strUser = e.options[e.selectedIndex].value;
 
@@ -11,25 +11,40 @@
        MyAndroid.receiveJSValues(o);
     }
     
-	function changeBackground(color) {
-   document.body.style.background = color;
+	function changeUp() {
+   document.body.style.background = "#B2FFB2";
+   document.getElementById("intro").style.font="bold 18px Impact, Charcoal, sans-serif";
+   document.getElementById("startUp").style.font="bold 15px Impact, Charcoal, sans-serif";
+   document.gameForm.gameName.style.background="#66CC99";
+   document.getElementById("button").style.backgroundColor = "#006633";
+   document.getElementById("button").style.color = "#ffffff";
+   
 }
 
 
     </script>
     <title></title>
   </head>
-  <body onload="changeBackground('#B2FFB2');">
-    <form name="billForm" id="billForm">
+  <body onload="changeUp();">
+    <form name="gameForm" id="gameForm">
+    
+    <center><p id="intro">Heard of a new game coming soon? Want to get the latest gaming news?</p>
+    
+    <img src="http://fc09.deviantart.net/fs71/f/2012/366/7/4/video_games_animation_by_impia_dea-d5pzkm5.gif" alt="gamer">
+    
+    <p id="startUp">Start your search right here, right now, right below.</p>
+    
+    <p> Choose a site:
       <select id="mySelect">
- 		<option value="http://www.gamespot.com/search/?qs=">GameSpot</option>
+ 		<option value="http://www.gamespot.com/search/?q=">GameSpot</option>
   		<option value="http://www.ign.com/search?q=">IGN</option>
 	</select>
+	</p>
       <p>Game Name: <input type="text" name="gameName"></p>
       
 	  
       
-      <button type="button" onclick="getValues();">Activate Search</button>
+      <button type="button" onclick="getValues();" id="button">Activate Search</button></center>
     </form>
   </body>
 </html>

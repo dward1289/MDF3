@@ -60,8 +60,8 @@ public class MainActivity extends Activity {
 	}
 	
 	public void theLaunch(){
-		Intent billIntent = new Intent(this, MadGeekBrowser.class);
-		  billIntent.putExtra("theInfo",transferInfo);
-		  startActivity(billIntent);
+		Intent theIntent = new Intent(this, MadGeekBrowser.class);
+		  theIntent.putExtra("theInfo",transferInfo);
+		  startActivity(theIntent);
 	}
 }

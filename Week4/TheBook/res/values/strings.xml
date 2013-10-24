@@ -4,5 +4,6 @@
     <string name="app_name">Gamer News</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="theAddress">www.google.com</string>
 
 </resources>
